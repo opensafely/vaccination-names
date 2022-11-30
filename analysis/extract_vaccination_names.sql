@@ -1,0 +1,1 @@
+SELECT DISTINCT VaccinationName FROM VaccinationReference
