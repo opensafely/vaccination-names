@@ -8,6 +8,7 @@ actions:
     run: >
       sqlrunner:latest
         --output output/vaccination_names.csv
+        --dummy-data-file analysis/dummy.csv
         analysis/extract_vaccination_names.sql
     outputs:
       moderately_sensitive:
@@ -26,3 +27,13 @@ actions:
     outputs:
       moderately_sensitive:
         html: output/vaccination_names.html
+        
+  extract_covid_vaccination_name_frequency:
+    run: >
+      sqlrunner:latest
+        --output output/covid_vaccination_name_frequency.csv
+        --dummy-data-file analysis/dummy_vaccination_name_frequency.csv
+        analysis/extract_covid_vaccination_name_frequency.sql
+    outputs:
+      moderately_sensitive:
+        rows: output/covid_vaccination_name_frequency.csv
