@@ -24,6 +24,7 @@ actions:
         --no-input 
         --output-dir=/workspace/output 
         --ExecutePreprocessor.timeout=86400
+        --template basic
     outputs:
       moderately_sensitive:
         html: output/vaccination_names.html
