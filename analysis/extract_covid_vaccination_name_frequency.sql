@@ -9,8 +9,8 @@ WHERE
         FROM
             VaccinationReference
         WHERE VaccinationContent = 'SARS-2 Coronavirus'
-    ) AND
-    Patient_ID NOT IN (
+    )
+    AND Patient_ID NOT IN (
         SELECT Patient_ID FROM PatientsWithTypeOneDissent
     )
 GROUP BY VaccinationName_ID, VaccinationName
