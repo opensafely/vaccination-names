@@ -9,7 +9,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
@@ -22,6 +22,6 @@ jobs:
   ensure-clean-notebooks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Ensure clean notebooks
         uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
