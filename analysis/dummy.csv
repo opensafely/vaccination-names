@@ -1,5 +1,6 @@
 VaccinationName
 COVID-19 Vaccine
+Vaccine with a particularly long name which should no longer be truncated
 AstraZeneca
 Moderna
 Another vaccine
